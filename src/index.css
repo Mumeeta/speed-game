@@ -1,13 +1,68 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=M+PLUS+Code+Latin:wght@400;500;600&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "M PLUS Code Latin", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  padding: 5rem;
+  background-image: linear-gradient(
+    90deg,
+    rgb(66, 99, 119) 0%,
+    hsla(78, 100%, 68%, 1) 100%
+  );
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  font-family: "Special Elite", cursive;
+  padding: 0.8rem 2rem;
+  border: none;
+  background-color: black;
+  margin: 1rem;
+}
+button {
+  font-size: 32px;
+  color: white;
+  font-family: "M PLUS Code Latin", sans-serif;
+}
+h1 {
+  font-size: 66px;
+}
+p {
+  margin: 2rem auto;
+  font-size: 33px;
+}
+
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.circle {
+  background-color: grey;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  color: white;
+  border: 1px solid black;
+}
+
+.circle p {
+  font-size: 2rem;
+  color: black;
+  font-weight: 600;
+}
+
+.active {
+  box-shadow: 0 0 25px rgb(14, 14, 12);
+  border: 25px solid rgb(17, 17, 17);
 }
